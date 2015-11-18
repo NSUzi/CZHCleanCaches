@@ -6,8 +6,10 @@ NSString *libraryPath =
 [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,
 NSUserDomainMask, YES) lastObject];
         NSString *CachesPath = [libraryPath
-stringByAppendingPathComponent:@"Caches"];\n
+stringByAppendingPathComponent:@"Caches"];
+
 2—计算缓存大小(用类名调用)
-[CleanCaches floderSizeAtPath:CachesPath]\n
+[CleanCaches floderSizeAtPath:CachesPath]
+
 3—清理缓存方法(类名调用)
 [CleanCaches cleanAction]
